@@ -789,10 +789,9 @@
     <script>
         (function () {
             function accessCodeForDate(date) {
-                const year = String(date.getFullYear()).slice(-2);
                 const day = String(date.getDate()).padStart(2, "0");
                 const month = String(date.getMonth() + 1).padStart(2, "0");
-                return year + "imm" + day + month;
+                return day + "imm" + month;
             }
             function getValidAccessCodes() {
                 const today = new Date();
